@@ -46,7 +46,7 @@ class JobClockProtocol(irc.IRCClient):
     username = config['nick']
     versionName = "JobClock"
     versionNum = "v0.0.1"
-    realname = config['nick']
+    realname = config['nick'] + " https://github.com/blha303/JobClockBot"
     global archive
     try:
         with open("archive.json") as f:

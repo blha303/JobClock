@@ -28,7 +28,7 @@ def u_clockout(info, msg):
     global tasks
     global archive
     if not info["nick"] in tasks:
-        say(info, u"You aren't clocked in!")
+        say(info, "You aren't clocked in!")
     else:
         tasks[info["nick"]]["timestopped"] = datetime.datetime.now();
         tasks[info["nick"]]["duration"] = ago.human(tasks[info["nick"]]["timestopped"] - tasks[info["nick"]]["timestarted"], past_tense='{}', future_tense='{}')
